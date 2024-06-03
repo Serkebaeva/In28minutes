@@ -3,6 +3,7 @@ package Counter;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
+
 public class Counter {
 
 	public static void main(String[] args) throws IOException {
