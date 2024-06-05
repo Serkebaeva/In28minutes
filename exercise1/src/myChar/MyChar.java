@@ -2,7 +2,7 @@ package myChar;
 
 public class MyChar {
 
-	char charFromUser;
+	private char charFromUser;
 	
 	public MyChar(char charFromUser1) {
 		this.charFromUser = charFromUser1;
@@ -10,6 +10,7 @@ public class MyChar {
 
 	public String isVowel() {
 		// Convert the character to a string and use .matches to check if it is a vowel
+		// for Consonants aStr.matches("[^aeiou]")
 		String result = Character.toString(this.charFromUser).matches("[aeiouAEIOU]") ? "Vowel" : "Not a vowel";
 	        return result;
   }
@@ -39,5 +40,6 @@ public class MyChar {
 		 System.out.println("Character is not an aplhabet character!"); 
 	   }
   }
+
 
 }
