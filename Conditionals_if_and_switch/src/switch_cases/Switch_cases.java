@@ -7,7 +7,7 @@ public class Switch_cases {
 
 		calendar.determineNameOfday(3);
 		calendar.isWeekday();
-		calendar.determineNameOfMonth(6);
+		System.out.println(determineNameOfMonth(6));
 
 
 	}
@@ -76,49 +76,35 @@ public class Switch_cases {
 		}
 	}
 
-	public void determineNameOfMonth(int monthNumber) {
-		this.monthNumber = monthNumber;
+	public static String determineNameOfMonth(int monthNumber) {
 		switch (monthNumber) {
 		case 1:
-			System.out.println("1st month of the year is a January");
-			break;
+			return "1st month of the year is a January";
 		case 2:
-			System.out.println("2nd month of the year is a February");
-			break;
+			return "2nd month of the year is a February";
 		case 3:
-			System.out.println("3rd month of the year is a March");
-			break;
+			return "3rd month of the year is a March";
 		case 4:
-			System.out.println("4th month of the year is an April");
-			break;
+			return "4th month of the year is an April";
 		case 5:
-			System.out.println("5th month of the year is a May");
-			break;
+			return "5th month of the year is a May";
 		case 6:
-			System.out.println("6th month of the year is a June");
-			break;
+			return "6th month of the year is a June";
 		case 7:
-			System.out.println("7th month of the year is a July");
-			break;
+			return "7th month of the year is a July";
 		case 8:
-			System.out.println("8th month of the year is an August");
-			break;
+			return "8th month of the year is an August";
 		case 9:
-			System.out.println("9th month of the year is a September");
-			break;
+			return "9th month of the year is a September";
 		case 10:
-			System.out.println("10th month of the year is an October");
-			break;
+			return "10th month of the year is an October";
 		case 11:
-			System.out.println("11th month of the year is a November");
-			break;
+			return "11th month of the year is a November";
 		case 12:
-			System.out.println("12th month of the year is a December");
-			break;			
-		default:
-			System.out.println("Invalid input");
-			break;
+			return "12th month of the year is a December";
+
 		}
+		return "Invalid input";
 	}
 
 }
