@@ -9,7 +9,6 @@ public class Switch_cases {
 		calendar.isWeekday();
 		System.out.println(determineNameOfMonth(6));
 
-
 	}
 
 	private int dayNumber;
