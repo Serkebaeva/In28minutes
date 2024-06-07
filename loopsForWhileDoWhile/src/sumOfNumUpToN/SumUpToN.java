@@ -11,7 +11,6 @@ public class SumUpToN {
 
 		for (int i = 1; i <= n; i++) {
 			sum = sum + i;
-			System.out.println(sum);
 		}
 
 		return sum;
