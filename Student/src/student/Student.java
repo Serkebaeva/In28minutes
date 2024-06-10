@@ -1,5 +1,7 @@
 package student;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Arrays;
 
 public class Student {
@@ -47,7 +49,7 @@ public class Student {
 		System.out.println("Minimum mark of student: "+name+" is: "+min);
 		return min;
 	}
-
+/* 
 	public int getAverageMark(){
 		int averageMark = 0;
 		for (int i=0; i<listOfMarks.length; i++){
@@ -56,6 +58,12 @@ public class Student {
 		}
 		System.out.println("Average Mark of student: "+name+" is: "+averageMark);
 		return averageMark;
+	} */
+
+	public BigDecimal getAverageMark(){
+		int sum = getTotalSumOfMarks();
+		int number = getNumberOfMarks();
+		return new BigDecimal(sum).divide(new BigDecimal(number),3,RoundingMode.UP);
 	}
 
 

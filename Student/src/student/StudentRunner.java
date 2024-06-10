@@ -12,7 +12,7 @@ public class StudentRunner {
 		System.out.println("Total sum: "+student.getTotalSumOfMarks());
 		student.getMaximumMark();
 		student.getMinimumMark();
-		student.getAverageMark();
+		System.out.println("Average Mark is: "+student.getAverageMark());;
 	}
 
 }
