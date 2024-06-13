@@ -12,6 +12,11 @@ public class StudentRunner {
 		student.getMaximumMark();
 		student.getMinimumMark();
 		System.out.println("Average Mark is: "+student.getAverageMark());
+		System.out.println(student);
+		student.addNewMark(35);
+		System.out.println(student);
+		student.removeMarkAtIndex(1);
+		System.out.println(student);
 	}
 
 }
