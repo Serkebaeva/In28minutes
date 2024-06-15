@@ -3,6 +3,10 @@ package secondLargestElement;
 public class SecondLargestElement {
 
 	public static int findSecondLargestElement(int[] array) {
+		if (array.length < 2) {
+			return -1; // Return -1 if the array has less than 2 elements.
+		}
+
 		int largestNumber = Integer.MIN_VALUE;
 		int secondLargestElement = Integer.MIN_VALUE;
 
@@ -15,6 +19,12 @@ public class SecondLargestElement {
 			}
 		}
 
+		// If there is no second largest element (all elements in the array are the
+		// same), return -1
+		if (secondLargestElement == Integer.MIN_VALUE) {
+			return -1;
+		}
+
 		return secondLargestElement;
 	}
 
@@ -22,7 +32,8 @@ public class SecondLargestElement {
 	public static void main(String[] args) {
 		int[] array = { 2, 4, 6, 9, 8, 9 };
 		System.out.println(SecondLargestElement.findSecondLargestElement(array));
-		System.out.println(SecondLargestElement.largestElement());
+		int[] array2 = { 2, 2, 2 };
+		System.out.println(SecondLargestElement.findSecondLargestElement(array2));
 
 	}
 
