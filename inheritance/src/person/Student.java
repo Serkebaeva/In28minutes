@@ -4,12 +4,13 @@ public class Student extends Person {
 	private String collegeName;
 	private int year; // YearOfStudy
 
-	public String getCollegeName() {
-		return collegeName;
+	public Student(String name, String collegeName) {
+		super(name);
+		this.collegeName = collegeName;
 	}
 
-	public void setCollegeName(String collegeName) {
-		this.collegeName = collegeName;
+	public String getCollegeName() {
+		return collegeName;
 	}
 
 	public int getYear() {
