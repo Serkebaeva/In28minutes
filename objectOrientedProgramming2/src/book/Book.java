@@ -9,7 +9,7 @@ public class Book {
 	private String author;
 	private ArrayList<Review> reviews = new ArrayList<>();
 
-	public Book(int id, String name, String author, Review review) {
+	public Book(int id, String name, String author) {
 		this.id = id;
 		this.name = name;
 		this.author = author;
@@ -41,6 +41,11 @@ public class Book {
 
 	public void addReview(Review review) {
 		this.reviews.add(review);
+	}
+
+	// print
+	public String toString() {
+		return String.format("Book id - %d, Title - %s, Author - %s, Reviews - [%s]", id, name, author, reviews);
 	}
 
 }
