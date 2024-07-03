@@ -1,5 +1,16 @@
 package collections;
 
+import java.util.Comparator;
+
+class DescendingStudentComparator implements Comparator<Student> {
+
+	@Override
+	public int compare(Student student1, Student student2) {
+		return Integer.compare(student1.getId(), student2.getId());
+	}
+
+}
+
 public class Student implements Comparable<Student> {
 	private int id;
 	private String name;
@@ -32,7 +43,7 @@ public class Student implements Comparable<Student> {
 
 	@Override
 	public int compareTo(Student that) {
-		return Integer.compare(this.id, that.id);
+		return Integer.compare(that.id, this.id);
 		/*
 		 * for reverse order, I would send "that.id" first.. for the ascending order,
 		 * this.id first.

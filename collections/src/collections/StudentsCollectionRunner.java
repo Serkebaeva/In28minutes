@@ -13,7 +13,10 @@ public class StudentsCollectionRunner {
 		List<Student> studentsAL = new ArrayList<>(students);
 
 		Collections.sort(studentsAL);
-		System.out.println(studentsAL);
+		System.out.println("Ascending order"+ studentsAL);
+		
+		Collections.sort(studentsAL, new DescendingStudentComparator());
+		System.out.println("DescendingStudentComparator" + studentsAL);
 	}
 
 }
