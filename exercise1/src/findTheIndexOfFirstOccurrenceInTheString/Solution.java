@@ -2,8 +2,8 @@ package findTheIndexOfFirstOccurrenceInTheString;
 
 class Solution {
 	public int strStr(String haystack, String needle) {
-		char[] arr1 = haystack.toCharArray();
-		char[] arr2 = needle.toCharArray();
+		char[] arr1 = haystack.toLowerCase().toCharArray();
+		char[] arr2 = needle.toLowerCase().toCharArray();
 
 		for (int i = 0; i <= arr1.length - arr2.length; i++) {
 			int j;
