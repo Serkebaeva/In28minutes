@@ -1,6 +1,7 @@
 package lambdaExpression;
 
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 class EvenNumberPredicate implements Predicate<Integer> {
@@ -9,10 +10,15 @@ class EvenNumberPredicate implements Predicate<Integer> {
 	}
 }
 
+class SystemOutConsumer implements Consumer<Integer> {
+	public void accept(Integer number) {
+		System.out.println(number);
+	}
+}
+
 public class lambdaExpressionBehindTheScreens {
 
-
 	public static void main(String[] args) {
-		List.of(23, 43, 34, 45, 36, 48).stream().filter(new EvenNumberPredicate()).forEach(e -> System.out.println(e));
+		List.of(23, 43, 34, 45, 36, 48).stream().filter(new EvenNumberPredicate()).forEach(new SystemOutConsumer());
 	}
 }
