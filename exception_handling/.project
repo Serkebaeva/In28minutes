@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>multiThreading</name>
+	<name>exception_handling</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1723959020248</id>
+			<id>1724058512009</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
