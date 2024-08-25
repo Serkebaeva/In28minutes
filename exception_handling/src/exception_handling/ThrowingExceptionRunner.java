@@ -12,7 +12,7 @@ class Amount {
 
 	public void add(Amount that) {
 		if (!this.currency.equals(that.currency)) {
-			throw new RuntimeException("Currencies Don't Match");
+			throw new RuntimeException("Currencies Don't Match " + this.currency + " & " + that.currency);
 		}
 		this.amount = this.amount + that.amount;
 	}
