@@ -17,6 +17,7 @@ class Solution {
 
 					// Extract the substring between substrStart and substrEnd
 					String substring = s.substring(substrStart, substrEnd + 1);
+					System.out.println(substring);
 
 					// Reset the start and end for the next substring search
 					substrStart = -1;
